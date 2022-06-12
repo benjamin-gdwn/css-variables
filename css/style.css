@@ -1,0 +1,47 @@
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+
+    body {
+        text-align: center;
+        background: #193549;
+        color: white;
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+      }
+  
+      .controls {
+        margin-bottom: 50px;
+      }
+  
+      input {
+        width: 100px;
+      }
+
+      
+      /* ---------------------------------------------------------------------------------------------- */
+
+      /* css variables */
+
+      /* ---------------------------------------------------------------------------------------------- */
+      /* :root fixes the variables to the html element */
+      :root {
+          /* CSS variables - stored values */
+          --base: #ffc600;
+          --spacing: 10px;
+          --blur: 10px;
+      }
+
+      img {
+          /* 1. These variables are the names of the inputs in the html doc
+          2. assigning the variables to properties of the img */
+          padding: var(--spacing);
+          background: var(--base);
+          filter: blur(var(--blur));
+      }
+
+      .hl{
+          /* assigning the variable to the span in the h2 element */
+          color: var(--base);
+      }
